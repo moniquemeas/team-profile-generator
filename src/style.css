@@ -1,0 +1,36 @@
+main {
+    margin:10px
+}
+.teamHeader{
+    text-align: center;
+    padding:10px;
+    color: aliceblue;
+    height: 80px;
+    background-color: salmon;
+}
+
+div header{
+    height: 7rem;
+}
+div header i {
+    color: rgb(255, 196, 0);
+}
+.cardContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.teamMember{
+    margin:10px;
+}
+.employeeContainer{
+    background-color:aliceblue;
+}
+.employeeInfo{
+    margin: 20px;
+    background-color: white;
+
+}
+
+.detail {
+    height: 45px;
+}

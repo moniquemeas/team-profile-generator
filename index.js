@@ -92,7 +92,7 @@ const addMember = () => {
             member = new Engineer (name, id, email, github);
             
             console.log(member);
-            
+
         } else if(role === "Intern"){
             member = new Intern (name, id, email, school);
             console.log(member);
@@ -115,6 +115,14 @@ fs.writeFile('./dist/index.html', data, err => {
    if (err) throw err;
     
    console.log('Check out index.html');
+
+fs.copyFile('./src/style.css', './dist/style.css', err => {
+    if(err) {
+        console.log(err);
+        return;
+    }
+    console.log('Style sheet copied successfully!');
+})
 })
 };
 
@@ -125,6 +133,13 @@ inputManager()
 })
 .then(pageHTML => {
     return writeFile(pageHTML);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse);
+    return fs.copyFile();
+})
+.then(copyFileResponse => {
+    console.log(copyFileResponse);
 })
 .catch(err => {
 console.log(err);

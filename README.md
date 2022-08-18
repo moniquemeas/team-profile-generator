@@ -31,9 +31,30 @@
     
   # Testing Demo
   * [![Team-Profile-Generator Demo](https://drive.google.com/file/d/1_r7qQcusHRLaMC7waZohquXdjLR-ub2L/view)](https://drive.google.com/file/d/1_r7qQcusHRLaMC7waZohquXdjLR-ub2L/view)
-  
+
   # Test:
+   * All tests passed in Jest.
+   
+  ![Failed-Test-Employee](./src/images/failed-emplyoee.jpg)
+
+  ![Passed-Test-Employee](./src/images/passed-employee.jpg)
+
+  ![Failed-Test-Manager](./src/images/failed-manager.jpg)
+
+  ![Passed-Test-Manager](./src/images/passed-manager.jpg)
+
+  ![Failed-Test-Engineer](./src/images/failed-engineer.jpg)
+
+  ![Passed-Test-Engineer](./src/images/passed-engineer.jpg)
+
+  ![Failed-Test-Intern](./src/images/failed-intern.jpg)
+
+  ![Passed-Test-Intern](./src/images/passed-intern.jpg)
+
+ 
+
   * Test was passed with Jest.
+  
     
   # Contributing:
   Monique Meas

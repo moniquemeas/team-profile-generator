@@ -12,7 +12,7 @@ const managerCard = function (manager) {
           <div class="employeeContainer">
           <div class="employeeInfo shadow">
           <div class="detail shadow-sm p-3">ID: ${manager.id}</div>
-          <div class="detail shadow-sm p-3">Email: ${manager.email}</div>
+          <div class="detail shadow-sm p-3">Email: <a href = 'mailto:${manager.email}'>${manager.email}</a></div>
           <div class="detail shadow-sm p-3">Office Number: ${manager.officeNumber}</div>
           </div>
           </div>
@@ -33,8 +33,8 @@ const engineerCard = function(engineer) {
           <div class="employeeContainer">
           <div class="employeeInfo shadow">
           <div class="detail shadow-sm p-3">ID: ${engineer.id}</div>
-          <div class="detail shadow-sm p-3">Email: ${engineer.email}</div>
-          <div class="detail shadow-sm p-3">GitHub username: ${engineer.github}</div>
+          <div class="detail shadow-sm p-3">Email: <a href = 'mailto:${engineer.email}'>${engineer.email}</a></div>
+          <div class="detail shadow-sm p-3">GitHub username: <a href = 'https://github.com/${engineer.github}' target ='_blank'>${engineer.github}</a></div>
           </div>
           </div>
       </div>
@@ -55,7 +55,7 @@ const internData = function (intern) {
           <div class="employeeContainer">
           <div class="employeeInfo shadow">
           <div class="detail shadow-sm p-3">ID: ${intern.id}</div>
-          <div class="detail shadow-sm p-3">Email: ${intern.email}</div>
+          <div class="detail shadow-sm p-3">Email: <a href = 'mailto:${intern.email}'>${intern.email}</a></div>
           <div class="detail shadow-sm p-3">School: ${intern.school}</div>
           </div>
           </div>

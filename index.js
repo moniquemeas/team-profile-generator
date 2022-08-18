@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer')
-//const generatePage = require('./src/page-template.js')
 
+//import files
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
@@ -134,10 +134,7 @@ inputManager()
 .then(pageHTML => {
     return writeFile(pageHTML);
 })
-.then(writeFileResponse => {
-    console.log(writeFileResponse);
-    return fs.copyFile();
-})
+
 .then(copyFileResponse => {
     console.log(copyFileResponse);
 })
